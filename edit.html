@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Bingo</title>
+</head>
+<body onload="editInit()">
+    <main>
+        <nav>
+            <button onclick="saveBingo()">Zapisz</button>
+            <button onclick="saveBingo(true)">Zapisz i wyjdź</button>
+            <button onclick="deleteBingo()">Usuń bingo</button>
+            <button onclick="window.location.replace('index.html')">Wróć</button>
+        </nav>
+        
+        <div id="bingoCont"></div>
+    
+        <h5>Treści pól</h5>
+        <div>
+            <ul id="bingoInputsID"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Page made by mlodybeton</p>
+        <a href="https://www.flaticon.com/free-icons/check-mark" title="check mark icons">Check mark icons created by Ian June - Flaticon</a>
+    </footer>
+
+<script src="editScript.js"></script>
+</body>
+</html>

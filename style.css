@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Nunito&display=swap');
+
+body
+{
+    padding: 0;
+    background-color: #E74C3C;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#bingoFieldsID
+{
+    width: 60vw;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.bingoRow
+{
+    width: 100%;
+    display: flex;
+}
+
+.bingoField, .bingoFieldSelected
+{
+    height: auto;
+    min-height: 140px;
+    width: 20%;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(100, 30, 22, 0.5);
+    margin: 1px;
+    border: #26043c 1px solid;
+}
+
+.bingoField > p, .bingoFieldSelected > p
+{
+    word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    padding: 16px 4px;
+}
+
+.bingoFieldSelected
+{
+    background-color: rgba(74, 24, 17, 0.672);
+    cursor: pointer;
+}
+
+.bingoField:hover, .bingoFieldSelected:hover
+{
+    background-color: rgba(222, 222, 222, 0.2);
+}
+
+.bingoFieldSelected::after
+{
+    content: '';
+    background: url('check-mark.png') center no-repeat;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#bingoInputsID
+{
+    list-style-type: none;
+}
+
+
+#bingoList
+{
+    list-style-type: none;
+    margin: 50px 30vw;
+    width: 40vw;
+    padding: 0;
+}
+
+#bingoList > li
+{
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgba(100, 30, 22, 0.5);
+    border: solid 4px black;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#bingoList > li:hover
+{
+    font-size: 1.6em;
+}
+
+#bingoNameContID
+{
+    margin: 30px 0;
+}
+
+button
+{
+    padding: 20px;
+    border: solid 4px #26043c;
+    margin: 10px;
+    color: inherit;
+    font-family: inherit;
+    background-color: #790239;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover
+{
+    padding: 20px 24px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav > button
+{
+    width: 20%;
+    box-sizing: border-box;
+}
+
+h6
+{
+    font-size: 6em;
+    margin: 0 0 100px 0;
+    text-align: center;
+    font-family: 'Monofett', cursive;
+    text-indent: 0.4em;
+    letter-spacing: 0.4em;
+}
+
+footer
+{
+    background-color: black;
+    text-align: right;
+    height: 70px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+footer > p
+{
+    display: block;
+    position: relative;
+    margin: 0 10px;
+}
+
+footer > a
+{
+    position: relative;
+    bottom: 0;
+    margin: 0 10px;
+}
+
+main
+{
+    margin-bottom: 150px;
+}
+
+#bingoNameContID
+{
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+#bingoNameContID > label
+{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.6em;
+}
+
+input
+{
+    padding: 10px;
+    background-color: rgba(100, 30, 22, 0.5);
+    border: solid 4px black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+input:focus
+{
+    outline: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(116,0,91,1) 0%, rgba(38,4,60,1) 100%, rgba(0,0,0,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient 
+{
+    0% 
+    {
+		background-position: 0% 50%;
+	}
+	50% 
+    {
+		background-position: 100% 50%;
+	}
+	100% 
+    {
+		background-position: 0% 50%;
+	}
+}
+
+h5
+{
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+#bingoInputsID
+{
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60vw;
+    margin: 20px 20vw;
+}
+
+#bingoInputsID > li > label
+{
+    padding: 0;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-right: 4px;
+    margin-left: 20px;
+}
+
+#bingoInputsID > li
+{
+    margin: 6px;
+}
+
+header
+{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) 
+{
+    #bingoFieldsID
+    {
+        width: 100%;
+    }
+
+    nav > button
+    {
+        margin: 5px;
+        padding: 6px;
+        font-size: 0.8em;
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    .bingoField, .bingoFieldSelected
+    {
+        min-height: 60px;
+    }
+
+    .bingoField > p, .bingoFieldSelected > p
+    {
+        font-size: 0.8em;
+    }
+
+    .bingoFieldSelected::after
+    {
+        background-size: contain;
+    }
+
+    h6
+    {
+        width: 100%;
+        font-size: 5em;
+        letter-spacing: 0.2em;
+        text-indent: 0.2em;
+    }
+}
