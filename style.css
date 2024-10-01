@@ -41,7 +41,7 @@ body
 
 .bingoField > p, .bingoFieldSelected > p
 {
-    word-break: break-all;
+    word-break: break-word;
     white-space: normal;
     text-align: center;
     padding: 16px 4px;
